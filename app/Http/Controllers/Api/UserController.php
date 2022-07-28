@@ -51,12 +51,12 @@ class UserController extends Controller
     }
 
     /**
-     * Users login
+     * User login
      *
      * @param  \Illuminate\Http\Request $request
      * @return \Illuminate\Http\Response
      */
-    public function login(Request $request)
+    public function authenticate(Request $request)
     {
         $validator = Validator::make($request->all(), [
             'email'     => 'required|email',
@@ -101,12 +101,12 @@ class UserController extends Controller
     }
 
     /**
-     * Users profile
+     * User profile
      *
      * @param  \Illuminate\Http\Request $request
      * @return \Illuminate\Http\Response
      */
-    public function userProfile()
+    public function getAuthenticatedUser()
     {
         return response()->json([
             'data' => auth()->user()

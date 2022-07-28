@@ -161,7 +161,7 @@ class BrandController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function delete($id)
     {
         if (!is_numeric($id)) {
             $resError = ['message' => 'id is not numeric'];
