@@ -8,7 +8,7 @@
     <img style="width:100%;float:left;" src="resources/images/laravel-8-capture.png"/>
 </div>
 
-# Docker Laravel 8 + JWT with PHP FPM 8.0
+# Docker Laravel 8 + Sanctum with PHP FPM 8.0
 
 The objective of this repository is having a CAAS [Containers As A Service](https://www.ibm.com/topics/containers-as-a-service) to provide a local development stage application with Nginx and PHP-FPM as Backend Service and a SQL Database Service following the best practices on an easy scenario to understand and modify in an Hexagonal Architecture.
 
